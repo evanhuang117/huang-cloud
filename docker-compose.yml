@@ -1,0 +1,12 @@
+services:
+  index:
+    image: evanhuang117/huang-cloud
+    build: 
+      context: .
+    volumes:
+      - ./config:/config
+    tty: true
+    stdin_open: true
+    ports:
+      - 6900:80
+      - 6901:443
