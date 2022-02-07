@@ -3,7 +3,7 @@ all: build run
 build:
 	docker-compose build 
 
-push:
+push: build
 	docker push evanhuang117/huang-cloud:latest
 
 run:
